@@ -22,4 +22,6 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  database: alfin_production
+  username: alfin
+  password: <%= ENV['ALFIN_DATABASE_PASSWORD'] %>
